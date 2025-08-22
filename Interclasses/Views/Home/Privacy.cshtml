@@ -1,6 +1,53 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+	ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container py-5">
+	<div class="text-center mb-5">
+		<h1 class="display-4 fw-bold mb-5 text-success">
+			<i class="bi bi-info-circle"></i> Seja Bem-Vindo as Apresentações
+		</h1>
+
+		<div class="row justify-content-center g-4">
+			<div class="col-md-4">
+				<div class="card h-100" style="background-color:palegreen">
+					<img src="~/img/Foto.jpg" class="card-img-top" alt="Foto Anna Julia">
+					<div class="card-body">
+						<h5 class="card-title text-success" style="font-size: 24px">Anna Julia Magalhães Costa</h5>
+						<p class="card-text">
+							Olá, me chamo Anna Julia, tenho 17 anos e nesse ano de 2025,
+							sou estudante de Desenvolvimento de Sistemas no SENAI,
+							juntamente com o SESI-026, localizado em Jaú-SP.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card h-100" style="background-color:palegreen">
+					<div class="card-body">
+						<h5 class="card-title mt-5 mb-5 text-success" style="font-size: 24px">Sobre o Interclasse do Sesi-026</h5>
+						<p class="card-text mt-5 mb-1">
+							Assim como várias escolas, o Sesi de Jaú é responsável por organizar os Jogos de Interclasse, no qual os alunos podem participar e competir em vários esportes.
+						</p>
+						<p class="mb-1">
+							Todos nós temos a oportunidade de participar dos jogos que são oferecidos, mas claro, sempre dando essa chance que todos possam participar de algo. Por exemplo, caso uma pessoa se inscreva em dois esportes, ela poderá participar de ambos caso não tenham pessoas suficientes em um determinado esporte.
+						</p>
+						<p>
+							Geralmente, os esportes oferecidos pelo Sesi-026 são: Futebol de Salão, Futebol de Campo, Vôlei, Triatlo, Parkuor, Just Dance, e outros diversos.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Botão voltar -->
+		<div class="mt-5">
+			<a asp-controller="Home" asp-action="Index" class="btn btn-success btn-lg">
+				Voltar à tela inicial
+			</a>
+		</div>
+	</div>
+</div>
+
+
