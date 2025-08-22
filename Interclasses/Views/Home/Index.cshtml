@@ -1,4 +1,68 @@
 ﻿@{
-	ViewData["Title"] = "Página Inicial";
+    ViewData["Title"] = "Página Inicial";
 }
+
+<div class="container py-5">
+
+    <!-- Cabeçalho -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-success">
+            <i class="bi bi-trophy-fill"></i> Sistema de Interclasses
+        </h1>
+        <p class="lead text-muted">
+            Organize e acompanhe esportes, times e campeonatos de forma prática
+        </p>
+        <a asp-controller="Esportes" asp-action="Index" class="btn btn-success btn-lg mt-3 shadow-sm">
+            Ver Esportes
+        </a>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-success shadow-sm hover-shadow">
+                <div class="card-body text-center">
+                    <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
+                    <h5 class="card-title fw-bold">Times</h5>
+                    <p class="card-text text-muted">
+                        Adicione ou edite times para cada esporte do Interclasse.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-success shadow-sm hover-shadow">
+                <div class="card-body text-center">
+                    <i class="bi bi-person-badge-fill display-4 text-success mb-3"></i>
+                    <h5 class="card-title fw-bold">Jogadores</h5>
+                    <p class="card-text text-muted">
+                        Organize jogadores, números e posições de cada time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card h-100 border-success shadow-sm hover-shadow">
+                <div class="card-body text-center">
+                    <i class="bi bi-calendar-event-fill display-4 text-danger mb-3"></i>
+                    <h5 class="card-title fw-bold">Campeonatos</h5>
+                    <p class="card-text text-muted">
+                        Crie, edite e acompanhe campeonatos e partidas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Efeito hover nos cards */
+    .hover-shadow:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    }
+</style>
 
